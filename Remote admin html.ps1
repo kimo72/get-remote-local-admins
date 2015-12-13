@@ -40,7 +40,7 @@ $encabezado | ConvertTo-HTML -head $estiloEncabezado  -title "Reporte de adminis
 
 #input credentials
 
-$credential = Get-Credential refinancia\administrador
+$credential = Get-Credential contoso\administrador
 
 
 foreach ($computer in $computerlist) { 
@@ -117,4 +117,4 @@ Invoke-Expression C:\Scripts\Reporte.html
 
 
 
-get-localadmins RFNSLAPACHE01.refinancia.com.co,RFNSLAPP01.refinancia.com.co,RFNSLAPP02.refinancia.com.co,RFNSLAPP03.refinancia.com.co,RFNSLAPP04.refinancia.com.co,RFNSLAPP05.refinancia.com.co,RFNSLBUS02.refinancia.com.co,RFNSLDB01BK.refinancia.internal,RFNSLDB02.refinancia.com.co,RFNSLDB04.refinancia.internal,RFNSLDB05.refinancia.internal,RFNSLDEV01.refinancia.com.co,RFNSLDEVDB01.refinancia.com.co,RFNSLDEVDB02.refinancia.com.co,RFNSLDOC01.refinancia.com.co,RFNSLLINCE01.refinancia.com.co,RFNSLLINCE01BK.refinancia.internal,RFNSLMAIL02.refinancia.com.co,RFNSLMIGLINCE01.refinancia.com.co,RFNSLRISK01.refinancia.com.co,RFNSLSAB01.refinancia.com.co,RFNSLSD01.refinancia.com.co,MAINSVR.refinancia.com.co,DBSVR.refinancia.com.co,RFNFENIX.refinancia.com.co,RFNBAQ.refinancia.com.co,RFNBUC.refinancia.com.co,RFNCAL.refinancia.com.co,RFNHYPERV.refinancia.com.co,RFNDC02.refinancia.internal,RFNSPRINT01.refinancia.com.co,RFNKASPERSKY01.refinancia.com.co,RFNKASPERSKY02.refinancia.internal,RFNHYPER01.refinancia.internal,RFNMCAFEE01.refinancia.com.co,RFNTELEFONIA.refinancia.com.co,RFNTELEFONIA02.refinancia.com.co,BANKVISION.refinancia.com.co,CTI2.refinancia.com.co,RFNAURAPORTAL01.refinancia.internal -fileLocation  C:\Scripts\
+get-localadmins pc1,pc2,pc3 -fileLocation  C:\Scripts\
